@@ -6,7 +6,7 @@ export function Navbar() {
   return (
     <nav className="mb-12 flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-6">
         <h1 className="">Logo</h1>
-        
+
       <section
         className={`${
           menuOpen
@@ -43,7 +43,7 @@ export function Navbar() {
         </button>
       </section>
 
-      <button className="px-4 py-2 hidden md:flex border border-black w-24 rounded-sm text-lg text-black mt-8">
+      <button className="px-4 py-2 hidden lg:flex border hover:text-white border-black w-24 rounded-sm text-lg text-black mt-8 lg:mt-0 hover:bg-black">
         Let&apos;s talk
       </button>
 
