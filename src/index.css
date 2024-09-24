@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Otterco-Bold";
+  src: url("/otterco_fonts//Otterco-Bold.otf");
+}
+
+@font-face {
+  font-family: "Otterco-Medium";
+  src: url("/otterco_fonts/Otterco-Medium.otf");
+}
+
+@font-face {
+  font-family: "Otterco-Regular";
+  src: url("/otterco_fonts//Otterco-Regular.otf");
+}
+
+body {
+  @apply text-black bg-[#F2F1EF] px-4 py-6 font-otterco-regular;
+}
