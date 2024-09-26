@@ -4,18 +4,18 @@ import { useState } from "react";
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="mb-12 flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-6">
-        <h1 className="">Logo</h1>
+    <nav className="mb-12 flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-4 md:px-32">
+      <h1 className="">GANTY</h1>
 
       <section
         className={`${
           menuOpen
             ? `left-0 px-8 pt-8 gap-6 opacity-100 z-40 ease-out lg:pt-0 transition-all duration-100 delay-75`
             : `-left-full opacity-0 lg:opacity-100 lg:left-0 transition-all duration-100 delay-75`
-        } absolute top-0 bg-[#fff] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col justify-center lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
+        } absolute top-0 bg-[#fff] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col justify-center gap-10 lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
         <button
-          className="mt-6 lg:mt-0"
+          className=""
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
@@ -24,7 +24,7 @@ export function Navbar() {
           WORK
         </button>
         <button
-          className="mt-3 lg:mt-0"
+          className=""
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
@@ -33,7 +33,7 @@ export function Navbar() {
           ABOUT
         </button>
         <button
-          className="mt-3 lg:mt-0"
+          className=""
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
