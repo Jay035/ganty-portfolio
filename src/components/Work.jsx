@@ -2,7 +2,7 @@ import { works } from "./data";
 
 export function Work() {
   return (
-    <section className="mb-20 px-4 md:px-12 lg:px-20 xl:px-32">
+    <section id="work" className="pt-24 lg:pt-40 mb-20 px-4 md:px-12 lg:px-20 xl:px-32">
       <h2 className="text-3xl md:text-4xl text-center bai-jamjuree-medium">
         My Works
       </h2>

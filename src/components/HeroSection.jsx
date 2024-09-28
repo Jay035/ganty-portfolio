@@ -1,6 +1,6 @@
 export function HeroSection() {
   return (
-    <section className="my-24 lg:my-32 flex flex-col lg:flex-row gap-10 justify-center md:justify-between px-4 md:px-12 lg:px-20 xl:px-32">
+    <section className="mt-24 lg:mt-32 flex flex-col lg:flex-row gap-10 justify-center md:justify-between px-4 md:px-12 lg:px-20 xl:px-32">
       <div className="rounded-2xl h-44 w-44 md:w-64 md:h-64 lg:order-2">
         <img className="rounded-full" src="/ganty.jpeg" alt="profile pic" />
       </div>
@@ -14,7 +14,7 @@ export function HeroSection() {
         </p>
         <div className="">
           <a
-            href=""
+            href="mailto:chidinmaukandu8@gmail.com"
             className="py-5 px-8 bg-black bai-jamjuree-medium rounded-xl text-lg text-white hover:bg-white hover:text-black hover:border hover:border-black"
           >
             Let&apos;s talk

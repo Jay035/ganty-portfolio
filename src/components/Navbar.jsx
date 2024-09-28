@@ -1,8 +1,13 @@
 "use client";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  let workId = document.getElementById("work");
+  let aboutId = document.getElementById("about");
+  let contactId = document.getElementById("contact");
+
   return (
     <nav className="mb-12 flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-4 md:px-12 lg:px-20 xl:px-32">
       <h1 className="">GANTY</h1>
@@ -15,37 +20,46 @@ export function Navbar() {
         } absolute top-0 bg-[#fff] lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col justify-center gap-10 lg:flex-row lg:gap-12 lg:justify-between lg:items-center text-base md:text-lg`}
       >
         <button
+          // to="#work"
           className=""
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
+            workId.scrollIntoView({ behavior: "smooth" });
           }}
         >
           WORK
         </button>
-        <button
+        <Link
+          to="#about"
           className=""
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
+            aboutId.scrollIntoView({ behavior: "smooth" });
           }}
         >
           ABOUT
-        </button>
-        <button
+        </Link>
+        <Link
+          to="#contact"
           className=""
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
+            contactId.scrollIntoView({ behavior: "smooth" });
           }}
         >
           CONTACT
-        </button>
+        </Link>
       </section>
 
-      <button className="px-4 py-2 hidden lg:flex border hover:text-white border-black w-24 rounded-sm text-lg text-black mt-8 lg:mt-0 hover:bg-black">
+      <a
+        href="mailto:chidinmaukandu8@gmail.com"
+        className="px-4 py-2 hidden lg:flex border hover:text-white border-black w-24 rounded-sm text-lg text-black mt-8 lg:mt-0 hover:bg-black"
+      >
         Let&apos;s talk
-      </button>
+      </a>
 
       {/* Hamburger (menu) icon */}
       <div

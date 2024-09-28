@@ -7,7 +7,7 @@ export function OtherWorks() {
       <div className="mt-6 grid gap-6 justify-center md:grid-cols-2 lg:grid-cols-3">
         <div className="text-center">
           <div className=" w-full mb-4">
-            <img src="../../public/r-programming.jpeg" alt="r-programming" />
+            <img src="/r-programming.jpeg" alt="r-programming" />
           </div>
           <a
             href="https://github.com/Ganty5/Starbuck-Coffee-Store-Analysis-using-R-programming"
@@ -18,7 +18,7 @@ export function OtherWorks() {
         </div>
         <div className="text-center">
           <div className="w-full mb-4">
-            <img src="../../public/power bi.jpeg" alt="power bi" />
+            <img src="/power bi.jpeg" alt="power bi" />
           </div>
           <a
             href="https://www.novypro.com/profile_projects/chidinmaukandu?Popup=memberProject&Data=1712568802661x979060435138858400"
