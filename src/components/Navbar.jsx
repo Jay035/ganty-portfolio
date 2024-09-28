@@ -25,7 +25,7 @@ export function Navbar() {
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
-            workId.scrollIntoView({ behavior: "smooth" });
+            workId.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
           }}
         >
           WORK
