@@ -4,7 +4,7 @@ import { useState } from "react";
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <nav className="mb-12 flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-4 md:px-32">
+    <nav className="mb-12 flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-4 md:px-12 lg:px-20 xl:px-32">
       <h1 className="">GANTY</h1>
 
       <section
