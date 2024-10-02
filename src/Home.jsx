@@ -5,9 +5,7 @@ import { Work } from "./components/Work";
 import { Navbar } from "./components/Navbar";
 import { About } from "./components/About";
 import { OtherWorks } from "./components/OtherWorks";
-import {Contact} from "./components/Contact";
-
-
+import { Contact } from "./components/Contact";
 
 function Home() {
   return (

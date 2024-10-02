@@ -7,7 +7,7 @@ export function Contact() {
       <div className="flex flex-col md:flex-row justify-between gap-8 mt-10">
         <div className="">
           <p className="font-medium text-xl"> Address</p>
-          <address className="text-lg">Besançon, France </address>
+          <span className="text-lg">Besançon, France </span>
         </div>
 
         <div className="text-3xl flex items-center gap-2">
