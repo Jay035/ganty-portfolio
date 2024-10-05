@@ -1,4 +1,6 @@
 "use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -8,8 +10,16 @@ export function Navbar() {
   let aboutId = document.getElementById("about");
   let contactId = document.getElementById("contact");
 
+  useGSAP(() => {
+
+    gsap.from([ "#nav"], {
+      opacity: 0,
+      duration: 1,
+      ease: "expo.inOut",
+    });
+  }, []);
   return (
-    <nav className="mb-12 flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-4 md:px-12 lg:px-20 xl:px-32">
+    <nav id="nav" className="mb-12 flex justify-between items-center border-b border-[#E5E7EB] tracking-tight w-full gap-x-12 py-6 px-4 md:px-12 lg:px-20 xl:px-32">
       <h1 className="">GANTY</h1>
 
       <section

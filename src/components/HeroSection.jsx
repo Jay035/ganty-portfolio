@@ -6,17 +6,34 @@ export function HeroSection() {
   useGSAP(() => {
     const heroText = new SplitType(".hero_text", { types: "words" });
 
-    gsap.from([heroText.words, ".hero_text", "#hero_img"], {
+    gsap.from("#hero_img", {
       y: 24,
       opacity: 0,
       duration: 1,
       stagger: { amount: 1 },
+      ease: "expo.in",
+    });
+
+    gsap.from([heroText.words, ".hero_text"], {
+      opacity: 0,
+      duration: 1,
+      ease: "ease",
+    });
+
+    gsap.from([heroText.words, ".hero_text"], {
+      y: 24,
+      duration: 2,
+      stagger: { amount: 1 },
       ease: "ease",
     });
   }, []);
+
   return (
     <section className="mt-24 lg:mt-32 flex flex-col lg:flex-row gap-10 justify-center md:justify-between px-4 md:px-12 lg:px-20 xl:px-32">
-      <div id="hero_img" className="rounded-2xl h-44 w-44 md:w-64 md:h-64 lg:order-2">
+      <div
+        id="hero_img"
+        className="rounded-2xl h-44 w-44 md:w-64 md:h-64 lg:order-2"
+      >
         <img className="rounded-full" src="/ganty.jpeg" alt="profile pic" />
       </div>
 
@@ -27,14 +44,12 @@ export function HeroSection() {
         <p className="text-2xl hero_text overflow-hidden md:text-3xl mb-12 lg:text-4xl bai-jamjuree-medium">
           A DATA ANALYST <i className="ri-line-chart-line text-[#e94732]"></i>
         </p>
-        <div className="hero_text">
-          <a
-            href="mailto:chidinmaukandu8@gmail.com"
-            className="py-5 px-8 bg-black bai-jamjuree-medium rounded-xl text-lg text-white hover:bg-white hover:text-black hover:border hover:border-black"
-          >
-            Let&apos;s talk
-          </a>
-        </div>
+        <a
+          href="mailto:chidinmaukandu8@gmail.com"
+          className="hero_text py-5 px-8 bg-black bai-jamjuree-medium rounded-xl text-lg text-white hover:bg-white hover:text-black hover:border hover:border-black"
+        >
+          Let&apos;s talk
+        </a>
       </div>
     </section>
   );
