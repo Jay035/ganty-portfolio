@@ -10,7 +10,7 @@ export function Work() {
         {works?.map((work, index) => (
           <div className="text-center" key={index}>
             <div className="bg-black/50 w-full h-32 mb-4"></div>
-            <a href={work.githubURL} className="text-2xl underline ">
+            <a href={work.URL} className="text-2xl underline ">
               {work?.name}
             </a>
           </div>

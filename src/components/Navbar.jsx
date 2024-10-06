@@ -2,7 +2,6 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +13,7 @@ export function Navbar() {
 
     gsap.from([ "#nav"], {
       opacity: 0,
-      duration: 1,
+      duration: .8,
       ease: "expo.inOut",
     });
   }, []);
@@ -44,8 +43,8 @@ export function Navbar() {
         >
           WORK
         </button>
-        <Link
-          to="#about"
+        <button
+          // to="#about"
           className=""
           onClick={(e) => {
             e.preventDefault();
@@ -54,9 +53,9 @@ export function Navbar() {
           }}
         >
           ABOUT
-        </Link>
-        <Link
-          to="#contact"
+        </button>
+        <button
+          // to="#contact"
           className=""
           onClick={(e) => {
             e.preventDefault();
@@ -65,7 +64,7 @@ export function Navbar() {
           }}
         >
           CONTACT
-        </Link>
+        </button>
       </section>
 
       <a

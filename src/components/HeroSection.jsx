@@ -23,8 +23,7 @@ export function HeroSection() {
     gsap.from([heroText.words, ".hero_text"], {
       y: 24,
       duration: 2,
-      stagger: { amount: 1 },
-      ease: "ease",
+      // stagger: { amount: 1 },
     });
   }, []);
 
