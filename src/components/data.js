@@ -6,7 +6,7 @@ export const works = [
   },
   {
     tag: "power-bi",
-    name: "Video-Game-Industry-Analysis",
+    name: "Video-Game-Industry-Dashboard",
     URL: "https://project.novypro.com/DJVSy0",
   },
   // {

@@ -27,12 +27,12 @@ export function OtherWorks() {
             Power BI
           </a>
         </div>
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="bg-black/50 w-full h-32 mb-4"></div>
           <a href="" className="text-2xl underline ">
             SQL
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
