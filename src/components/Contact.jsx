@@ -1,5 +1,3 @@
-import arrow from "../../public/icon.svg";
-
 export function Contact() {
   return (
     <footer
@@ -17,7 +15,7 @@ export function Contact() {
           href="mailto:chidinmaukandu8@gmail.com"
           className="bg-[#9CFF8F] text-black hover:bg-[#9CFF8F]/80 rounded-[30px] w-fit flex items-center gap-[10px] py-2 md:py-3 px-4"
         >
-          Send me an email <img src={arrow} alt="arrow" />
+          Send me an email <img src="/icon.svg" alt="arrow" />
         </a>
         <div className="flex gap-4 items-center">
           <a href="https://www.linkedin.com/in/chidinma-ukandu-nwafor-01357b156/">
