@@ -15,7 +15,22 @@ export function Contact() {
           href="mailto:chidinmaukandu8@gmail.com"
           className="bg-[#9CFF8F] text-black hover:bg-[#9CFF8F]/80 rounded-[30px] w-fit flex items-center gap-[10px] py-2 md:py-3 px-4"
         >
-          Send me an email <img src="/icon.svg" alt="arrow" />
+          Send me an email{" "}
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 11.0002L11 1.00024M11 1.00024V11.0002M11 1.00024H1"
+              stroke="black"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </a>
         <div className="flex gap-4 items-center">
           <a href="https://www.linkedin.com/in/chidinma-ukandu-nwafor-01357b156/">
