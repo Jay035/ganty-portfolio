@@ -37,3 +37,21 @@ export const otherWorks = [
     URL: "https://github.com/Ganty5",
   },
 ];
+
+export const ExperienceData = [
+  {
+    company: "Teqflow",
+    duration: "May 2024 - Present",
+    role: "Data Analyst intern",
+  },
+  {
+    company: "TuumIO",
+    duration: "May 2022 - April 2024",
+    role: "Community Manager",
+  },
+  {
+    company: "Women Techmakers Asaba",
+    duration: "October 2022 - June 2023",
+    role: "Program Manager",
+  },
+];

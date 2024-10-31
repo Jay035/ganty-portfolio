@@ -1,94 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Englebert&family=Onest:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: "Otterco-Bold";
-  src: url("/otterco_fonts//Otterco-Bold.otf");
+  font-family: "Neue-haas-grotesk Bold";
+  src: url("/neue-haas-grotesk-display-pro/NeueHaasDisplayBold.ttf");
 }
 
 @font-face {
-  font-family: "Otterco-Medium";
-  src: url("/otterco_fonts/Otterco-Medium.otf");
+  font-family: "Neue-haas-grotesk Medium";
+  src: url("/neue-haas-grotesk-display-pro/NeueHaasDisplayRoman.ttf");
 }
 
 @font-face {
-  font-family: "Otterco-Regular";
-  src: url("/otterco_fonts//Otterco-Regular.otf");
+  font-family: "Neue-haas-grotesk Regular";
+  src: url("/neue-haas-grotesk-display-pro/NeueHaasDisplayRoman.ttf");
+}
+
+.englebert-regular {
+  font-family: "Englebert", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.onest-regular {
+  font-family: "Onest", sans-serif;
 }
 
 body {
-  @apply text-black bg-[#F2F1EF] px-4 py-6 font-otterco-regular;
-}
-
-.bai-jamjuree-extralight {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.bai-jamjuree-light {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.bai-jamjuree-regular {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.bai-jamjuree-medium {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.bai-jamjuree-semibold {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.bai-jamjuree-bold {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.bai-jamjuree-extralight-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.bai-jamjuree-light-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.bai-jamjuree-regular-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.bai-jamjuree-medium-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.bai-jamjuree-semibold-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.bai-jamjuree-bold-italic {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-weight: 700;
-  font-style: italic;
+  @apply bg-black text-white px-4 py-6;
+  font-family: "Neue-haas-grotesk Regular", sans-serif;
 }
