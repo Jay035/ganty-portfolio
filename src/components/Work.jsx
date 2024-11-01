@@ -10,7 +10,7 @@ export function Work() {
         {works?.map((work, index) => (
           <div className="" key={index}>
             <div className="bg-white/50 w-full h-32 mb-4"></div>
-            <a href={work.URL} className="text-2xl lg:text-3xl font-medium">
+            <a href={work.URL} className="text-xl lg:text-3xl font-medium">
               {work?.name}
             </a>
           </div>

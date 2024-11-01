@@ -13,7 +13,7 @@ function Home() {
       <Navbar />
       <HeroSection />
       <Work />
-      <div id="about" className="grid gap-10 py-20 lg:grid-cols-2 md:px-6">
+      <div id="about" className="grid gap-10 py-20 lg:grid-cols-2 lg:px-6">
         <Experience />
         <Education />
       </div>

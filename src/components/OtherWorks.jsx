@@ -2,7 +2,7 @@ export function OtherWorks() {
   return (
     <section className="my-20">
       <h2 className="text-3xl md:text-4xl lg:text-6xl text-center -tracking-[0.03em]">Explore my Portfolio</h2>
-      <div className="mt-11 text-2xl md:text-3xl grid gap-10 justify-center md:grid-cols-2">
+      <div className="mt-11 text-2xl md:text-3xl grid gap-10 md:grid-cols-2">
         <div className="">
           <img
             className="mb-4 w-full"

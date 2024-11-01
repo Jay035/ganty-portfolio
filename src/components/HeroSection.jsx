@@ -22,13 +22,13 @@ export function HeroSection() {
   }, []);
 
   return (
-    <section className="mt-24 lg:mt-32 grid lg:grid-cols-2 gap-10 lg:gap-16 justify-between">
-      <div className="hero_img h-32 w-32 md:h-44 md:w-44 lg:w-full lg:h-fit max-w-[423px] lg:ml-auto lg:order-2">
+    <section className="mt-24 lg:mt-32 grid xl:grid-cols-2 gap-10 lg:gap-16 justify-between">
+      <div className="hero_img h-32 w-32 md:h-44 md:w-44 xl:w-full xl:h-fit max-w-[423px] xl:ml-auto xl:order-2">
         <img className="" src="/dp.png" alt="profile pic" />
       </div>
 
       <div className="">
-        <h1 className="text-5xl englebert-regular hero_text uppercase md:text-6xl lg:text-[90px] my-4 -tracking-[0.02em]">
+        <h1 className="text-6xl englebert-regular hero_text uppercase md:text-7xl lg:text-[90px] my-4 -tracking-[0.02em]">
           Hi, I&apos;m Chidinma
         </h1>
         <h2 className="text-3xl font-medium hero_text overflow-hidden mb-8 lg:text-5xl text-[#CDD8C6] flex gap-1 items-center -tracking-[0.03em]">

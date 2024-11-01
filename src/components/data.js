@@ -41,7 +41,7 @@ export const otherWorks = [
 export const ExperienceData = [
   {
     company: "Teqflow",
-    duration: "May 2024 - Present",
+    duration: "May 2024 - August 2024",
     role: "Data Analyst intern",
   },
   {
@@ -50,8 +50,18 @@ export const ExperienceData = [
     role: "Community Manager",
   },
   {
+    company: "Ministry of Planning, Research and Statistics",
+    duration: "June 2022 - July 2023",
+    role: "Program Manager Trainee",
+  },
+  {
     company: "Women Techmakers Asaba",
     duration: "October 2022 - June 2023",
     role: "Program Manager",
+  },
+  {
+    company: "Nigerian Gas Company Limited (Subsidiary of NNPC LTD)",
+    duration: "July 2019 - December 2019",
+    role: "Program Manager Intern",
   },
 ];
