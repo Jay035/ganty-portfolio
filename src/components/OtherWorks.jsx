@@ -7,7 +7,7 @@ export function OtherWorks() {
       <div className="mt-11 text-2xl md:text-3xl grid gap-10 md:grid-cols-2">
         <div className="">
           <img
-            className="mb-4 w-full h-[302px] object-cover"
+            className="mb-4 w-full h-[220px] object-cover"
             src="/r-programming.jpeg"
             alt="r-programming"
           />
@@ -20,7 +20,11 @@ export function OtherWorks() {
           </a>
         </div>
         <div className="">
-          <img className="mb-4 w-full h-[302px] object-cover" src="/power bi.jpeg" alt="power bi" />
+          <img
+           className="mb-4 w-full h-[220px] object-cover"
+           src="/power bi.jpeg"
+            alt="power bi"
+          />
 
           <a
             href="https://www.novypro.com/profile_projects/chidinmaukandu?Popup=memberProject&Data=1712568802661x979060435138858400"
@@ -31,17 +35,21 @@ export function OtherWorks() {
         </div>
         <div className="">
           <img
-            className="mb-4 w-full h-[302px] object-cover"
+            className="mb-4 w-full h-[220px] object-cover"
             src="/python-program.jpeg"
-            alt="r-programming"
+            alt="python"
           />
-          <a href="" className="">
+          <a href="https://github.com/Ganty5?tab=repositories" className="">
             Python
           </a>
         </div>
         <div className="">
-          <img className="mb-4 w-full h-[302px] object-cover" src="/sql.jpg" alt="r-programming" />
-          <a href="" className="">
+          <img
+            className="mb-4 w-full h-[220px] object-cover"
+            src="/sql.jpg"
+            alt="sql"
+          />
+          <a href="https://github.com/Ganty5/SALES-ANALYSIS" className="">
             SQL
           </a>
         </div>
