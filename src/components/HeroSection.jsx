@@ -49,7 +49,7 @@ export function HeroSection() {
       </div>
 
       <div className="">
-        <h1 className="text-6xl englebert-regular hero_text uppercase md:text-7xl lg:text-[90px] my-4 -tracking-[0.02em]">
+        <h1 className="text-6xl englebert-regular hero_text uppercase md:text-7xl lg:text-[90px] mt-4 -tracking-[0.02em]">
           Hi, I&apos;m Chidinma
         </h1>
         <h2
@@ -59,7 +59,7 @@ export function HeroSection() {
           A DATA ANALYST{" "}
           <img className="w-[45px] h-[45px] hero_img" src="/Frame.svg" alt="" />
         </h2>
-        <p className="text-lg md:text-2xl hero_subtext onest-regular">
+        <p className="text-lg md:text-xl hero_subtext onest-regular">
           Business Intelligence Analyst with strong drive for analysis,
           management and research. I have deep passion exploring the world of
           data through the power of digital tools. With a self-driven and

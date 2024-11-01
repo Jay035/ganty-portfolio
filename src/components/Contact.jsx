@@ -5,7 +5,7 @@ export function Contact({ contactRef }) {
     <footer
       id="contact"
       ref={contactRef}
-      className="pt-20 pb-10 md:pb-14 lg:pb-24 md:pt-[84px] lg:pt-[224px]"
+      className="py-10 md:pb-14 lg:pb-24 md:pt-[84px] "
     >
       <h4 className="text-[#9E77ED] -tracking-[3%] text-lg md:text-2xl lg:text-[30px] xl:leading-[40px]">
         READY TO WORK TOGETHER?
