@@ -2,12 +2,22 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-export function Navbar() {
+export function Navbar({ workRef, aboutRef, contactRef }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  let workId = document.getElementById("work");
-  let aboutId = document.getElementById("about");
-  let contactId = document.getElementById("contact");
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    } else {
+      console.error(`Element not found.`);
+    }
+  };
 
   useGSAP(() => {
     gsap.from(["#nav"], {
@@ -21,12 +31,12 @@ export function Navbar() {
       id="nav"
       className="mb-12 flex justify-between items-center w-full gap-x-12 py-6"
     >
-      <h1 className="">GANTY</h1>
+      <h1 className=""></h1>
 
       <section
         className={`${
           menuOpen
-            ? `left-0 px-8 pt-8 gap-6 opacity-100 z-40 ease-out lg:pt-0 transition-all duration-100 delay-75`
+            ? `left-0 pt-8 gap-6 opacity-100 z-40 ease-out lg:pt-0 transition-all duration-100 delay-75`
             : `-left-full opacity-0 lg:opacity-100 lg:left-0 transition-all duration-100 delay-75`
         } absolute  -tracking-[0.02em] top-0 bg-black/90 lg:bg-transparent lg:relative h-screen lg:h-fit w-full lg:w-fit ease-in-out flex flex-col justify-center gap-10 lg:flex-row lg:gap-12 lg:justify-between items-center text-lg md:text-2xl`}
       >
@@ -35,11 +45,7 @@ export function Navbar() {
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
-            workId.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-              inline: "nearest",
-            });
+            scrollToSection(workRef);
           }}
         >
           WORK
@@ -49,11 +55,7 @@ export function Navbar() {
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
-            aboutId.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-              inline: "nearest",
-            });
+            scrollToSection(aboutRef);
           }}
         >
           ABOUT
@@ -63,11 +65,7 @@ export function Navbar() {
           onClick={(e) => {
             e.preventDefault();
             setMenuOpen((prevState) => !prevState);
-            contactId.scrollIntoView({
-              behavior: "smooth",
-              block: "start",
-              inline: "nearest",
-            });
+            scrollToSection(contactRef);
           }}
         >
           CONTACT
@@ -123,3 +121,9 @@ export function Navbar() {
     </nav>
   );
 }
+
+Navbar.propTypes = {
+  workRef: PropTypes.string,
+  aboutRef: PropTypes.string,
+  contactRef: PropTypes.string,
+};

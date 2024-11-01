@@ -1,15 +1,14 @@
 import { works } from "./data";
+import PropTypes from "prop-types";
 
-export function Work() {
+export function Work({ workRef }) {
   return (
-    <section id="work" className="pt-24 lg:pt-40 mb-20">
-      <h2 className="text-4xl md:text-5xl lg:text-6xl">
-        MY WORK
-      </h2>
+    <section ref={workRef} id="work" className="pt-24 lg:pt-40 mb-20">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl">MY WORK</h2>
       <div className="mt-5 grid gap-10 lg:grid-cols-2">
         {works?.map((work, index) => (
           <div className="" key={index}>
-            <div className="bg-white/50 w-full h-32 mb-4"></div>
+            <img className="mb-4" src={work.img} alt="project image" />
             <a href={work.URL} className="text-xl lg:text-3xl font-medium">
               {work?.name}
             </a>
@@ -19,3 +18,7 @@ export function Work() {
     </section>
   );
 }
+
+Work.propTypes = {
+  workRef: PropTypes.string,
+};

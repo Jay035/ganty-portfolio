@@ -2,11 +2,15 @@ export const works = [
   {
     tag: "python",
     name: "Ultimatum-Game-Analysis",
+
+    img: "/ultimatum.jpeg",
     URL: "https://github.com/Ganty5/Ultimatum-Game-Analysis",
   },
   {
     tag: "power-bi",
     name: "Video-Game-Industry-Dashboard",
+    img: "/video-game.jpeg",
+
     URL: "https://project.novypro.com/DJVSy0",
   },
   // {
@@ -22,6 +26,7 @@ export const works = [
   {
     tag: "r-programming",
     name: "Starbuck-Coffee-Store-Analysis",
+    img: "/starbucks.jpeg",
     URL: "https://github.com/Ganty5/Starbuck-Coffee-Store-Analysis-using-R-programming",
   },
 ];
@@ -34,7 +39,7 @@ export const otherWorks = [
   {
     tag: "python",
     title: "Python",
-    URL: "https://github.com/Ganty5",
+    URL: "https://github.com/Ganty5?tab=repositories",
   },
 ];
 
@@ -52,7 +57,7 @@ export const ExperienceData = [
   {
     company: "Ministry of Planning, Research and Statistics",
     duration: "June 2022 - July 2023",
-    role: "Program Manager Trainee",
+    role: "Project Manager Trainee",
   },
   {
     company: "Women Techmakers Asaba",
@@ -62,6 +67,6 @@ export const ExperienceData = [
   {
     company: "Nigerian Gas Company Limited (Subsidiary of NNPC LTD)",
     duration: "July 2019 - December 2019",
-    role: "Program Manager Intern",
+    role: "Project Manager Intern",
   },
 ];
