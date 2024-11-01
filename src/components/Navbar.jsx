@@ -74,8 +74,7 @@ export function Navbar() {
         </button>
 
         <a
-          // target="_blank"
-          href=""
+          href="https://drive.google.com/file/d/1PpCRUZpLcG19R8wLLTtw4YJoN4xoXPcZ/view?usp=sharing"
           className={`text-xl w-fit flex items-center gap-[10px] border border-[#AFB1AD] rounded-[30px] px-4 py-3 hover:border-[#9CFF8F]`}
         >
           MY RESUME
