@@ -26,7 +26,7 @@ export const works = [
   {
     tag: "r-programming",
     name: "Starbuck-Coffee-Store-Analysis",
-    img: "/starbucks.jpeg",
+    img: "/starbuck.jpeg",
     URL: "https://github.com/Ganty5/Starbuck-Coffee-Store-Analysis-using-R-programming",
   },
 ];

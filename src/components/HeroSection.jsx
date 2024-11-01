@@ -1,24 +1,44 @@
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
 import gsap from "gsap";
+// import { SplitText } from "gsap/SplitText";
+
+// gsap.registerPlugin(SplitText) 
 
 export function HeroSection() {
   useGSAP(() => {
-    const heroText = new SplitType(".hero_text", { types: "words" });
+    const heroText = new SplitType(".hero_text", { types: "words, chars" });
+    const herosubText = new SplitType(".hero_subtext", { types: "words, chars" });
 
     gsap.from(".hero_img", {
       y: 24,
       opacity: 0,
-      duration: 1,
+      duration: .4,
       stagger: { amount: 1 },
       ease: "expo.in",
     });
 
-    gsap.from([heroText.words, ".hero-text"], {
-      y: 24,
-      ease: "power1.out",
+   
+    gsap.from(heroText.chars, {
       duration: 2,
-      // stagger: { amount: 1 },
+      opacity: 0,
+      scale: 0,
+      y: 80,
+      rotationX: 180,
+      transformOrigin: "0% 50% -50",
+      ease: "back",
+      stagger: 0.01
+    });
+
+    gsap.from(herosubText.chars, {
+      duration: 0.8,
+      opacity: 0,
+      scale: 0,
+      y: 80,
+      rotationX: 180,
+      transformOrigin: "0% 50% -50",
+      ease: "back",
+      stagger: 0.01
     });
   }, []);
 
@@ -39,7 +59,7 @@ export function HeroSection() {
           A DATA ANALYST{" "}
           <img className="w-[45px] h-[45px] hero_img" src="/Frame.svg" alt="" />
         </h2>
-        <p className="text-lg md:text-2xl hero_text onest-regular">
+        <p className="text-lg md:text-2xl hero_subtext onest-regular">
           Business Intelligence Analyst with strong drive for analysis,
           management and research. I have deep passion exploring the world of
           data through the power of digital tools. With a self-driven and
