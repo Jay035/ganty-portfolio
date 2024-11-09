@@ -56,7 +56,7 @@ export function HeroSection() {
           className="text-3xl font-medium hero_text overflow-hidden mb-8 lg:text-5xl text-[#CDD8C6] -tracking-[0.03em] space-x-2
         "
         >
-          BUSINESS INTELLIGENT ANALYST{" "}
+          BUSINESS INTELLIGENCE ANALYST{" "}
           {/* <img className="w-[45px] h-[45px] hero_img" src="/Frame.svg" alt="" /> */}
         </h2>
         <p className="text-lg md:text-xl hero_subtext onest-regular">
