@@ -67,6 +67,6 @@ export const ExperienceData = [
   {
     company: "Nigerian Gas Company Limited (Subsidiary of NNPC LTD)",
     duration: "June 2020 - December 2020",
-    role: "Project Analyst Intern",
+    role: "Business Analyst Intern",
   },
 ];
