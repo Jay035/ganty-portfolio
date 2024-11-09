@@ -9,7 +9,7 @@ export function Work({ workRef }) {
         {works?.map((work, index) => (
           <div className="" key={index}>
             <img className="mb-4 w-full h-[257px] object-cover object-top" src={work.img} alt="project image" />
-            <a href={work.URL} className="text-xl lg:text-3xl font-medium">
+            <a href={work.URL} className="text-xl lg:text-3xl font-medium hover:underline">
               {work?.name}
             </a>
           </div>
