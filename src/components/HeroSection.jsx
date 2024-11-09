@@ -53,11 +53,11 @@ export function HeroSection() {
           Hi, I&apos;m Chidinma
         </h1>
         <h2
-          className="text-3xl font-medium hero_text overflow-hidden mb-8 lg:text-5xl text-[#CDD8C6] flex gap-1 items-center -tracking-[0.03em] space-x-2
+          className="text-3xl font-medium hero_text overflow-hidden mb-8 lg:text-5xl text-[#CDD8C6] -tracking-[0.03em] space-x-2
         "
         >
-          A DATA ANALYST{" "}
-          <img className="w-[45px] h-[45px] hero_img" src="/Frame.svg" alt="" />
+          BUSINESS INTELLIGENT ANALYST{" "}
+          {/* <img className="w-[45px] h-[45px] hero_img" src="/Frame.svg" alt="" /> */}
         </h2>
         <p className="text-lg md:text-xl hero_subtext onest-regular">
           Business Intelligence Analyst with strong drive for analysis,

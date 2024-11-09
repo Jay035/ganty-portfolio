@@ -1,7 +1,7 @@
 export const works = [
   {
     tag: "python",
-    name: "Ultimatum-Game-Analysis",
+    name: "Behavioural Economics Research Analysis using Ultimatum Game (Master Dissertation Project)",
 
     img: "/ultimatum.jpeg",
     URL: "https://github.com/Ganty5/Ultimatum-Game-Analysis",
@@ -66,7 +66,7 @@ export const ExperienceData = [
   },
   {
     company: "Nigerian Gas Company Limited (Subsidiary of NNPC LTD)",
-    duration: "July 2019 - December 2019",
+    duration: "June 2020 - December 2020",
     role: "Project Manager Intern",
   },
 ];
