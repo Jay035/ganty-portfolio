@@ -14,7 +14,7 @@ export function OtherWorks() {
 
           <a
             href="https://github.com/Ganty5/Starbuck-Coffee-Store-Analysis-using-R-programming"
-            className=""
+            className="hover:underline"
           >
             R Programming
           </a>
@@ -28,7 +28,7 @@ export function OtherWorks() {
 
           <a
             href="https://www.novypro.com/profile_projects/chidinmaukandu?Popup=memberProject&Data=1712568802661x979060435138858400"
-            className=""
+            className="hover:underline"
           >
             Power BI
           </a>
@@ -39,7 +39,7 @@ export function OtherWorks() {
             src="/python-program.jpeg"
             alt="python"
           />
-          <a href="https://github.com/Ganty5?tab=repositories" className="">
+          <a href="https://github.com/Ganty5?tab=repositories" className="hover:underline">
             Python
           </a>
         </div>
@@ -49,7 +49,7 @@ export function OtherWorks() {
             src="/sql.jpg"
             alt="sql"
           />
-          <a href="https://github.com/Ganty5/SALES-ANALYSIS" className="">
+          <a href="https://github.com/Ganty5/SALES-ANALYSIS" className="hover:underline">
             SQL
           </a>
         </div>
