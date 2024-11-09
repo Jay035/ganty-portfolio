@@ -57,16 +57,16 @@ export const ExperienceData = [
   {
     company: "Ministry of Planning, Research and Statistics",
     duration: "June 2022 - July 2023",
-    role: "Project Manager Trainee",
+    role: "Data/ Project Analyst Trainee",
   },
   {
     company: "Women Techmakers Asaba",
     duration: "October 2022 - June 2023",
-    role: "Program Manager",
+    role: "Program Manager/ Analyst",
   },
   {
     company: "Nigerian Gas Company Limited (Subsidiary of NNPC LTD)",
     duration: "June 2020 - December 2020",
-    role: "Project Manager Intern",
+    role: "Project Analyst Intern",
   },
 ];
