@@ -72,7 +72,7 @@ export function Navbar({ workRef, aboutRef, contactRef }) {
         </button>
 
         <a
-          href="https://drive.google.com/file/d/1h7NWqS_IdXlBKvXXvrSSjpg0cRf7UsyT/view"
+          href="https://drive.google.com/file/d/1p_kC1fx9Bm9bXKIv33UTc4C68q_cCwXM/view?usp=sharing"
           className={`text-xl w-fit flex items-center gap-[10px] border border-[#AFB1AD] rounded-[30px] px-4 py-3 hover:border-[#9CFF8F]`}
         >
           MY RESUME
