@@ -3,22 +3,23 @@ import SplitType from "split-type";
 import gsap from "gsap";
 // import { SplitText } from "gsap/SplitText";
 
-// gsap.registerPlugin(SplitText) 
+// gsap.registerPlugin(SplitText)
 
 export function HeroSection() {
   useGSAP(() => {
     const heroText = new SplitType(".hero_text", { types: "words, chars" });
-    const herosubText = new SplitType(".hero_subtext", { types: "words, chars" });
+    const herosubText = new SplitType(".hero_subtext", {
+      types: "words, chars",
+    });
 
     gsap.from(".hero_img", {
       y: 24,
       opacity: 0,
-      duration: .4,
+      duration: 0.4,
       stagger: { amount: 1 },
       ease: "expo.in",
     });
 
-   
     gsap.from(heroText.chars, {
       duration: 2,
       opacity: 0,
@@ -27,7 +28,7 @@ export function HeroSection() {
       rotationX: 180,
       transformOrigin: "0% 50% -50",
       ease: "back",
-      stagger: 0.01
+      stagger: 0.01,
     });
 
     gsap.from(herosubText.chars, {
@@ -38,7 +39,7 @@ export function HeroSection() {
       rotationX: 180,
       transformOrigin: "0% 50% -50",
       ease: "back",
-      stagger: 0.01
+      stagger: 0.01,
     });
   }, []);
 
@@ -53,7 +54,7 @@ export function HeroSection() {
           Hi, I&apos;m Chidinma
         </h1>
         <h2
-          className="text-3xl font-medium hero_text overflow-hidden mb-8 lg:text-5xl text-[#CDD8C6] -tracking-[0.03em] space-x-2
+          className="text-2xl md:text-3xl font-medium hero_text overflow-hidden mb-8 lg:text-5xl text-[#CDD8C6] -tracking-[0.03em] space-x-2
         "
         >
           BUSINESS INTELLIGENCE ANALYST{" "}
